@@ -41,3 +41,11 @@ def Union(list1, list2):
     for i in list2:
         list1.append(i)
     return list1
+
+def Intersection(list1, list2):
+    matchlist=[]
+    for item in list1:
+        for word in list2:
+            if word == item:
+                matchlist.append(word)
+    return matchlist
