@@ -20,3 +20,10 @@ def UpdateString(s, a, num):
     t[num]= a
     t=''.join(t)
     print("OUTPUT:", t)
+
+def FindWordCount(list, s):
+    n=0
+    for i in list:
+        if i== s:
+            n+=1
+    return n
