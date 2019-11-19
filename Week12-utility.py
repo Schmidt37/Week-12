@@ -5,3 +5,12 @@
 
 def PrintOutput(word):
     print("OUTPUT", word)
+
+def LoadFile(filename):
+    file= filename.open()
+    filelines = file.readlines()
+    file.close()
+    filelist=[]
+    for line in filelines:
+        filelist.append(line)
+    return filelist
