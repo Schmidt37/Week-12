@@ -14,3 +14,9 @@ def LoadFile(filename):
     for line in filelines:
         filelist.append(line)
     return filelist
+
+def UpdateString(s, a, num):
+    t = list(s)
+    t[num]= a
+    t=''.join(t)
+    print("OUTPUT:", t)
