@@ -49,3 +49,9 @@ def Intersection(list1, list2):
             if word == item:
                 matchlist.append(word)
     return matchlist
+
+def NotIn(list1, list2):
+    notmatchlist=[]
+    for item in list1:
+        if item not in list2:
+            notmatchlist.append(item)
